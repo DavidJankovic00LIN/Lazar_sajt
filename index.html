@@ -304,3 +304,17 @@
   </footer>
 
 </html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Inicijalizacija Sidenav-a
+        var sidenav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sidenav);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        // Inicijalizacija Collapsible
+        var collapsibles = document.querySelectorAll('.collapsible');
+        M.Collapsible.init(collapsibles);
+    });
+</script>
