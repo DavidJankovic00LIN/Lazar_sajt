@@ -1,12 +1,293 @@
 /* boje koje mije lazar posalo : 6ABEA7 0094C6 */
-nav{
+* {
+	outline: 1px solid red;
+	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+  }
 
-	background-color: #676F54;
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+/* Optional: Add some padding to sections to account for fixed header */
+.scrollspy {
+  scroll-margin-top: 80px; /* Adjust based on your header height */
+  padding-top: 20px;
+}
+
+nav{
+	background-color:#1c1c3b;
+	height:64px;
+	/*background-color: #676F54;*/
+}
+/* Dodaj ovo u tvoj style.css fajl */
+
+
+#logo {
+    height: 100%; /* Logo će zauzimati 80% visine navigacionog bara */
+    width: auto; /* Širina će se automatski prilagoditi da održi proporcije */
+    max-height: 64px; /* Maksimalna visina - možeš podesiti po potrebi */
+    padding: 5px 0; /* Mali padding gore i dole za bolji izgled */
+}
+
+/* Responsive prilagodba za manje ekrane */
+@media only screen and (max-width: 600px) {
+    .nav-wrapper {
+        height: 56px; /* Manja visina na mobilnim uređajima */
+    }
+    
+    #logo {
+        height: 70%; /* Možeš podesiti procente za mobilne */
+    }
 }
 .page-footer{
-	background-color: #676f54;
+	background-color:#1c1c3b
+	
 }
 
 #about_us{
-	background-color: #BDE4A8;
+	background-color: #063970;
+	
 }
+#about_work{
+	background-color: #063970;
+}
+
+#posteri{
+	padding-top: calc(10px + 6vw);
+}
+
+#text_1{
+	color:white;
+	font-family: "Roboto Condensed", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+	font-size: calc(9px + 1vw); /* Počinje od 9px i raste sa ekranom */
+}
+#text_2{
+	font-family: "Roboto Condensed", sans-serif;
+  	font-optical-sizing: auto;
+  	font-weight: <weight>;
+  	font-style: normal;
+	font-size: calc(9px + 1vw);
+
+}
+#text_3{
+	font-family: "Roboto Condensed", sans-serif;
+  	font-optical-sizing: auto;
+	font-weight: 400;
+	font-style: normal;
+	font-size:small;
+}
+#nav_text{
+	font-family: "Roboto Condensed", sans-serif;
+  	font-optical-sizing: auto;
+	  font-weight: 500;
+}
+
+#naslov_1{
+	color:white;
+	font-family: "Roboto Condensed", sans-serif ;
+	font-weight: bold;
+}
+
+#naslov_2{
+	font-family: "Roboto Condensed", sans-serif ;
+	font-weight: bold;
+
+}
+
+
+@media only screen and (min-width: 601px) {
+	.carousel {
+	  padding: 0 15px;
+	}
+	
+	.carousel .carousel-item img {
+	  max-height: 380px;
+	}
+  } /* Ovo je zagrada koja nedostaje */
+
+
+/* Osnovni stilovi */
+.equal-height-cards {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .equal-height-cards .col {
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px; /* Dodaje prostor između kartica */
+	margin-bottom: 30px; /* Razmak ispod kartica na mobilnim */
+  }
+  
+  .card-wrapper {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .card {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .card-image {
+	flex-shrink: 0;
+  }
+  
+  .card-image img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+  }
+  
+  .card-content {
+	flex-grow: 1;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+  }
+  
+  .text-container {
+	flex-grow: 1;
+	overflow-y: auto; /* Omogućava skrolovanje ako tekst ne stane */
+	max-height: 200px; /* Ograničava visinu teksta */
+	padding-right: 10px;
+	}
+  
+  .textovi {
+	text-align: justify;
+	hyphens: auto;
+	margin: 0;
+	line-height: 1.6;
+  }
+  
+  /* Responsive prilagodbe */
+  @media only screen and (max-width: 992px) {
+	.equal-height-cards .col {
+	  flex: 0 0 100%;
+	  max-width: 100%;
+	}
+	
+	.text-container {
+	  max-height: none; /* Uklanja ograničenje visine na mobilnim */
+	}
+  }
+  
+  /* Animacija za hover efekat */
+  .card:hover {
+	transform: translateY(-5px);
+	transition: transform 0.3s ease;
+	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+
+  #bullet_point{
+	font-size: 0.7em;
+	vertical-align: middle;
+	margin-right: 4px;
+  }
+
+
+
+  @media only screen and (min-width: 992px) {
+	.order-l1 { order: 1; }
+	.order-l2 { order: 2; }
+  }
+
+
+  @media only screen and (max-width: 992px) {
+	.push-l5, .pull-l7 {
+		position: static;
+		left: auto;
+		right: auto;
+	}
+	
+	.valign-wrapper {
+		height: auto !important;
+		margin-bottom: 20px;
+	}
+	
+	#text_2 {
+		margin-top: 20px;
+	}
+}
+
+#start_dugme{
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 2px solid white;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 0 30px;
+	margin-top: 30px;
+	backdrop-filter: blur(5px);
+	transition: all 0.3s ease;
+}
+/* Karusel stilovi */
+#posteri {
+    padding-top: 0;
+    height: 100%;
+}
+/* Karusel stilovi */
+#posteri {
+	margin-top: 20px;
+  }
+  
+  .carousel {
+	height: 400px; /* Fiksna visina za desktop */
+	overflow: hidden;
+  }
+  
+  .carousel .carousel-item {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  
+  .carousel .carousel-item img {
+	max-height: 100%;
+	width: auto;
+	max-width: 100%;
+	object-fit: contain;
+  }
+  
+  /* Responzivni stilovi */
+  @media only screen and (max-width: 600px) {
+	.carousel {
+	  height: 250px; /* Manja visina na mobilnim */
+	  margin: 0 auto;
+	  width: 90%;
+	}
+	
+	#posteri {
+	  order: 2; /* Karusel ide posle liste na mobilnim */
+	}
+	
+	.col.l7.s12 {
+	  order: 1; /* Lista ide pre karusela na mobilnim */
+	}
+  }
+  
+  @media only screen and (min-width: 601px) {
+	.carousel {
+	  padding: 0 15px;
+	}
+	
+	.carousel .carousel-item img {
+	  max-height: 380px;
+	}

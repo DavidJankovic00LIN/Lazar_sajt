@@ -1,25 +1,30 @@
 <html>
 
 <head>
-    <title>Planinsko drustvo Lazarus Rex</title>
+    <title>ПСУ ЈАСТРЕБ</title>
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Import Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
     <!--My css-->
     <link rel="stylesheet" href="style.css">
 
     <!--Animate on Scroll-->
-    <link rel="stylesheet" href="aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <!--FONTS-->
 
+    <!-- Viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -44,196 +49,330 @@
 <nav>
     <div class="nav-wrapper">
         <div class="container">
-      <a href="#!" class="brand-logo"><img src="foto/logo.png"  id="logo"></a>
+      <a href="#!" class="brand-logo"><img src="foto/logo.webp"  id="logo"></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down" id="navigacija">
-        <li><a href="">Pocetna</a></li>
-        <li><a href="">O nama</a></li>
-        <li><a href="">Statut i pravila</a></li>
-        <li><a href="">Uprava</a></li>
-        <li><a href="">Najcesca pitanja</a></li>
-        <li><a href="">Kontakt</a></li>
+        
+        <li><a href="#about_us" id="nav_text">О нама</a></li>
+        <li><a href="#org_misson" id="nav_text">Наша мисија</a></li>
+        <li><a href="#about_work" id="nav_text">Групе</a></li>
+      <!--  <li><a href="">Галерија</a></li> -->
+        <li><a href="#QandA" id="nav_text">Најчешћа питања</a></li>
+        <li><a href="#kontakt" id="nav_text">Контакт</a></li>
       </ul>
     </div>
     </div>
   </nav>
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="">Pocetna</a></li>
-    <li><a href="">O nama</a></li>
-    <li><a href="">Statut i pravila</a></li>
-    <li><a href="">Uprava</a></li>
-    <li><a href="">Najcesca pitanja</a></li>
-    <li><a href="">Kontakt</a></li>
-  </ul>
+  
+<ul class="sidenav" id="mobile-demo">
+  <li><a href="#about_us" id="nav_text">О нама</a></li>
+  <li><a href="#org_misson" id="nav_text">Наша мисија</a></li>
+  <li><a href="#about_work" id="nav_text">Групе</a></li>
+  <li><a href="#QandA" id="nav_text">Најчешћа питања</a></li>
+  <li><a href="#kontakt" id="nav_text">Контакт</a></li>
+</ul>
 
 </div>
 
 <!--Landing page-->
-
-
-<!--Begining page-->
-<div id="about_us" class="scrollspy">
-    <div class="container">
-        <br>
-        <br>
-        <h3 id="naslov">O nama</h3>
-        <div class="row">
+<div id="landing_page" style="background-image: url('foto/mnk2.png'); 
+                              background-size: cover;
+                              background-position: center;
+                              background-repeat: no-repeat;
+                              height: 100vh;
+                              width: 100%;
+                              position: relative;">
+  
+  <!-- Content over the background image -->
+  <div class="container" style="position: relative; z-index: 1; height: 100%;">
+    <div class="valign-wrapper" style="height: 100%;">
+      <div class="center-align white-text" style="width: 100%;">
+        <h2 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-weight: 700;">
+          МИ НИСМО НИКАД КЛОНУЛИ ДУХОМ!
+        </h2>
+      </div>
+      <div class="row">
         
-           <div class="col l6 s12"  data-aos="fade-right">
-               <p id="textovi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div> 
-            
-        </div>
-        <h3 id="naslov">Podnaslov</h3>
-        <div class="row">
-        
-            <div class="col l6 s12"  data-aos="fade-right">
-                <p id="textovi">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-             </div> 
-             
-         </div>
+        <a class="waves-effect waves-light btn-large" href="#about_us" id="start_dugme">УПОЗНАЈ&nbsp;НАС</a>
+      </div>
     </div>
+   
+  </div>
 
+ 
+  
+</div>
+<!--About us-->
+<div id="about_us" class="scrollspy">
+  <div class="container">
+      <br><br>
+      
+      <!-- Prvi red - tekst 1 i slika 1 -->
+      <div class="row">
+          <div class="col s12 l7" data-aos="fade-right">
+              <h3 id="naslov_1">O nama</h3>
+              <p class="textovi" id="text_1">
+                  Планинарско-спортско удружење Јастреб формирано је 21. марта 2025 године, дана када славимо долазак пролећа, долазак новог Сунца. ПСУ Јастреб створен је из љубави према животу и свему што га чини светлим.
+                  Одлазак у природу за нас није само излет, већ остварење како физичких, тако и духовних циљева, поистовећивање и интимно спајање са природом и њеним благодатима. Одлазак у шуму за нас није пуко бекство од градске буке већ отеловљење унутрашње слободе, отпора и суверености пред лицем надмоћне и дехуманизоване силе модерног света.
+              </p>
+          </div>
+          
+          <div class="col s12 l5" data-aos="fade-left">
+              <div class="center-align hide-on-large-only" style="padding: 20px 0;">
+                  <img src="foto/slika1.png" alt="Planinarenje" class="responsive-img z-depth-2" style="max-width: 70%;">
+              </div>
+              <div class="valign-wrapper hide-on-med-and-down" style="height: 100%; align-items: flex-start; padding-top: 2.5rem;">
+                  <img src="foto/slika1.png" alt="Planinarenje" class="responsive-img z-depth-2" style="max-width: 80%;">
+              </div>
+          </div>
+      </div>
+      
+      <!-- Drugi red - tekst 2 i slika 2 -->
+      <div class="row">
+          <div class="col s12 l7 push-l5" data-aos="fade-left">
+              <p class="textovi" id="text_1">
+                  Изазов сам по себи није само спољашња обавеза већ унутрашњи чин самодисциплине, превазилажења и уздизања. Изазов је за нас доказ сопствене слободе и самоостварења.
+                  Пут ка врху, ка остварењу, често је важнији од самог циља јер за нас је свака шетња испит воље, а успон подвиг који учвршћује наш карактер и способност да превазиђемо себе. Коначно, освајање врха је синтеза борбе не само против елемената природе, него и против сумњи, слабости и ограничења, достигнуће крајње тачке висине – врха, потврда је савладавања свих препрека.
+              </p>
+          </div>
+          
+          <div class="col s12 l5 pull-l7" data-aos="fade-right">
+              <div class="center-align hide-on-large-only" style="padding: 20px 0;">
+                  <img src="foto/slika2.png" alt="Planinarski izazov" class="responsive-img z-depth-2" style="max-width: 70%;">
+              </div>
+              <div class="valign-wrapper hide-on-med-and-down" style="height: 100%; align-items: flex-start;">
+                  <img src="foto/slika2.png" alt="Planinarski izazov" class="responsive-img z-depth-2" style="max-width: 80%;">
+              </div>
+          </div>
+      </div>
+  </div>
+  <br>
+</div>
+
+<!-- CILJEVI DRUSTVA -->         
+<div id="org_misson" class="scrollspy">
+  <div class="container">
+      <br><br>
+      
+      <!-- Prvi red - tekst 1 i slika 1 -->
+      <div class="row">
+          <div class="col s12 l7" data-aos="fade-right">
+            <h3 id="naslov_2">ЦИЉЕВИ</h3>
+            <ul id="plan_lista" class="fly-in-text">
+              <li data-aos="fade-up" id="text_2"><i class="material-icons" id="bullet_point"> brightness_1</i> Изградња заједнице кроз активности у природи</li>
+              <br>
+              <li data-aos="fade-up" id="text_2"><i class="material-icons" id="bullet_point"> brightness_1</i> Привући ентузијасте који су заиста заинтересовани и вољни да учествују.</li>
+              <br>
+              <li data-aos="fade-up" id="text_2"><i class="material-icons" id="bullet_point"> brightness_1</i> Стекнути нове вештине, учити заједно и преносити знање на друге.</li>
+              <br>
+              <li data-aos="fade-up" id="text_2"><i class="material-icons" id="bullet_point"> brightness_1</i> Остварити виши ниво руковођења, прелазак из удружења у друштво.</li>
+              <br>
+              <li data-aos="fade-up" id="text_2"><i class="material-icons" id="bullet_point"> brightness_1</i>Организовати што више акција, камповања, маршева, других догађаја и окупљања</li>
+              <br>
+            </ul>
+          </div>
+          
+          <div class="col s12 l5" data-aos="fade-left">
+            <div class="center-align hide-on-large-only" style="padding: 20px 0;">
+              <div class="carousel carousel-slider" id="myCarousel">
+                <a class="carousel-item" href="#one!"><img src="foto/poster1.1.png" class="responsive-img"></a>
+                <a class="carousel-item" href="#two!"><img src="foto/poster2.png" class="responsive-img"></a>
+                <a class="carousel-item" href="#three!"><img src="foto/poster5.png" class="responsive-img"></a>
+              </div>
+            </div>
+            <div class="valign-wrapper hide-on-med-and-down" style="height: 100%; align-items: flex-start; padding-top: 2.5rem;">
+              <div class="carousel carousel-slider" id="myCarousel">
+                <a class="carousel-item" href="#one!"><img src="foto/poster1.1.png" class="responsive-img"></a>
+                <a class="carousel-item" href="#two!"><img src="foto/poster2.png" class="responsive-img"></a>
+                <a class="carousel-item" href="#three!"><img src="foto/poster5.png" class="responsive-img"></a>
+              </div>
+            </div>
+          </div>
+      </div>
+      
+      <!-- Drugi red - tekst 2 i slika 2 -->
+      <div class="row">
+          <div class="col s12 l7 push-l5" data-aos="fade-left">
+            <ul>
+              <li data-aos="fade-up" id="text_2"><i class="material-icons" id="bullet_point"> brightness_1</i>Посећивати значајне локалитете, планине и фестивале.</li>
+              <br>
+              <li data-aos="fade-up" id="text_2"><i class="material-icons" id="bullet_point"> brightness_1</i>Свакој групи омогућити независност у раду и развој унутар своје нише.</li>
+              <br>
+              <li data-aos="fade-up" id="text_2"><i class="material-icons" id="bullet_point"> brightness_1</i>Сарађивати са другим организацијама и клубовима ради заједничког напредовања.</li>
+              <br>
+              <li data-aos="fade-up" id="text_2"><i class="material-icons" id="bullet_point"> brightness_1</i>Дугорочни циљ: имати свој простор за окупљање и средства превоза.</li>
+            </ul>
+            
+              
+          </div>
+          
+          <div class="col s12 l5 pull-l7" data-aos="fade-right">
+              <div class="center-align hide-on-large-only" style="padding: 20px 0;">
+                  <img src="foto/poster4.png" alt="Planinarski izazov" class="responsive-img z-depth-2" style="max-width: 70%;">
+              </div>
+              <div class="valign-wrapper hide-on-med-and-down" style="height: 100%; align-items: flex-start;">
+                  <img src="foto/poster4.png" alt="Planinarski izazov" class="responsive-img z-depth-2" style="max-width: 80%;">
+              </div>
+          </div>
+      </div>
+  </div>
+  <br>
 </div>
 
 
+
+<!--O grupama-->
 <div id="about_work"  class="scrollspy">
-    <div class="container">
-        <br>
-        <br>
-        <h3 id="naslov">Jos texta</h3>
-        <div class="row">
-        
-           <div class="col l6 s12"  >
-               <p id="textovi" data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div> 
-            
-        </div>
-     </div>   
-
-     <div id="about_work"  class="scrollspy">
-        <div class="container">
-            <br>
-            <br>
-            <h3 id="naslov">PLAN RADA</h3>
-            
-            <ul id="plan_lista" class="fly-in-text">
-                <li data-aos="fade-up"><i class="material-icons ">looks_one</i> <b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
-                <br>
-                <br>
-                <li data-aos="fade-up"><i class="material-icons">looks_two</i> <b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
-                <br>
-                <br>
-                <li data-aos="fade-up"> <i class="material-icons">looks_3</i> <b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
-                <br>
-                <br>
-                <li data-aos="fade-up"><i class="material-icons">looks_4</i><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
-                <br>
-                <br>
-                <li data-aos="fade-up"><i class="material-icons">looks_5</i><b>Lorem ipsum</b> dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</li>
-    
-    
-    
-    
-            </ul>
-    
-            <br>
-            <br>
-         </div>   
-
-<!--Organisation leaders info-->
-
-<div id="team_info2" class="scrollspy">
-    <div class="container">
-      
-      <br>
-      <h3>MEET THE TEAM</h3>
-      <p id="textovi">MOZDA JOS MALO TEXTA,MOZDA NE,kako ti mislis da valja valja.</p>
+  <div class="container">
       <br>
       <br>
-      <br>
-      <div class="row">   
-
-        <div class="col s12 l4" data-aos="fade-right">
-          <h4>IME PREZIEM</h4>
-          <div class="card">
-            <div class="card-image">
-              <img src="foto/uprava_1.png">
-            
-            </div>
-            <div class="card-content">
-              <p id="textovi">I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            
-          </div>
-        </div>
-     
+      <div class="row">
+         <div class="col l8 offset-l2"  >
+          <h3 id="naslov_1">O групама</h3>
+             <p id="text_1" data-aos="fade-left">Наш је састав разнолик, те смо вољни да у редове прихватимо младе људе, ентузијасте у било којој културној, спортској или научној сфери живота. Рад и организација у секцијама-групама пружа свакоме могућност да се пронађе у ономе што воли и самим тим окружи себе, себи сличнима. Поред неизоставног дружења у дивљини, природа одређене групе којој члан удружења припада ствара простор за креативно размишљање и колективну сарадњу, па на тај начин не само индивидуално, већ заједнички са осталима достиже висине у сфери интересовања. 
+              Група покрива одређени архетип и развија своју нишу у оквиру удружења. Група има вођу, заменика и своје чланове. Група има своју аутономију.
+              Придружите се некој од наших група!</p>
+              <br>
+              <br>
+          </div> 
           
-   
-        <div class="col s12 l4" data-aos="fade-up">
-          <h4>IME PREZIEM</h4>
-          <div class="card">
-            <div class="card-image">
-              <img src="foto/uprava_2.png">
-             
-            </div>
-            <div class="card-content">
-              <p id="textovi">I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            
-          </div>
-        </div>
-
-
-        <div class="col s12 l4" data-aos="fade-left" >
-          <h4>IME PREZIEM</h4>
-          <div class="card">
-            <div class="card-image">
-              <img src="foto/uprava_3.png">
-              
-            </div>
-            <div class="card-content">
-              <p id="textovi">I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            
-          </div>
-        </div>
-
       </div>
-                
+   </div>   
+</div>
 
-
+<!--Individual group info-->
+<div id="team_info2" class="scrollspy">
+  <div class="container">
+    <br>
+    
+    <div class="row equal-height-cards">   
+      <!-- Prva kartica -->
+      <div class="col s12 l4" data-aos="fade-right">
+        <div class="card-wrapper">
+          
+          <h4>
+            Група<span class="hide-on-large-only"> </span><br class="show-on-med-and-down"> за уметност
+          </h4>
+          
+          <div class="card">
+            <div class="card-image">
+              <img src="foto/umetnost.png" alt="Уметничка група" class="responsive-img">
+            </div>
+            <div class="card-content">
+              <div class="text-container">
+                <p class="textovi" id="text_3">Група за уметност пружа могућност стицања знања из свих области уметности током трајања акција. Полазници ће, поред теоријских, имати могућност да стекну и практична знања, примене их и створе сопствена уметничка дела, било то песма, цртеж, фотографија, филм... Полазници ће касније имати прилику да изложе своје радове на акцијама које се организују на нивоу друштва.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Druga kartica -->
+      <div class="col s12 l4" data-aos="fade-up">
+        <div class="card-wrapper">
+          
+          <h4>
+            Колекционарска<span class="hide-on-large-only"> </span><br class="show-on-med-and-down">група
+          </h4>
+          <div class="card">
+            <div class="card-image">
+              <img src="foto/kolekcionar.jpg" alt="Колекционарска група" class="responsive-img">
+            </div>
+            <div class="card-content">
+              <div class="text-container">
+                <p class="textovi" id="text_3">Колекционарска група у окупља ентузијасте који воле историју, старе предмете и добру причу. Наше интересовање обухвата широк спектар историјских артефаката — од античких новчића и књига, до војних шлемова, униформи, значки и ситница из ближе прошлости. Сваки предмет, без обзира на своју вредност или старост, за нас представља капију у неко прошло време и прилику да се боље разуме дух једног доба. Главни циљ наше групе није само прикупљање, већ дружење, разговор и размена знања.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Treća kartica -->
+      <div class="col s12 l4" data-aos="fade-left">
+        <div class="card-wrapper">
+          <h4>
+            Хајдучка<span class="hide-on-large-only"> </span><br class="show-on-med-and-down">група
+          </h4>
+          <div class="card">
+            <div class="card-image">
+              <img src="foto/ajduk.jpg" alt="Хајдучка група" class="responsive-img">
+            </div>
+            <div class="card-content">
+              <div class="text-container">
+                <p class="textovi" id="text_3">Основни програм рада групе је истраживање неистражених локација, шетња кроз теже проходне стазе и упознавање с природом у ширем смислу, прелажења препрека, алпинизам, преживљавање у дивљини, сналажење у простору - картографија, топографија и комуникација. Спортске активности у природи попут трчања, гимнастике и разних додатних вежби уз заједнички избор. У обзир долазе и сложеније радње попут ноћних успона и шетњи без дигиталне навигације.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-
   </div>
+</div>
+
+<style>
+</style>
 
 
   <!--Q&A --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-  <div id="pitanja_i_odgovori" class="scrollspy">
+  <div id="QandA" class="scrollspy">
     <br>
     <br>
     <br>
     <div class="container">
-        <h3>Q&A</h3><br>
-        <h5>Neka od najvazninijh pitanja</h5><br>
+        <h3 id="naslov_2">Питања и одговори</h3><br>
+        <h5 id="naslov_2">Нека од најважнијих питања и одговори на њих.
+          У случају да имате додатна питања, слободно нас контактирајте путем друштвених мрежа понуђених у контакт секцији.</h5><br>
       <ul class="collapsible" id="qia" data-aos="zoom-in">
         <li>
-          <div class="collapsible-header" id="pozadina"> First </div>
-          <div class="collapsible-body" id="textovi"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-header" id="text_2"> Могу ли да оснујем своју групу? </div>
+          <div class="collapsible-body" id="text_2"><span>Да, уколико сте дугогодишњи члан и добро представите вашу идеју руководству.</span></div>
         </li>
         <li>
-          <div class="collapsible-header" id="pozadina">Second</div>
-          <div class="collapsible-body"  id="textovi"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-header" id="text_2"> Да ли ми треба предзнање или посебна спремност, обука да бих био члан?</div>
+          <div class="collapsible-body"  id="text_2"><span>Не, потребна је само жеља, прихватамо свакога ко жели да се опроба у било чему.</span></div>
         </li>
         <li>
-          <div class="collapsible-header" id="pozadina">Third</div>
-          <div class="collapsible-body"  id="textovi"><span>Lorem ipsum dolor sit amet.</span></div>
+          <div class="collapsible-header" id="text_2">Који ниво физичке спреме удружење захтева од мене?</div>
+          <div class="collapsible-body"  id="text_2"><span>Потребна је само добра воља, није нам циљ да примамо професионалне спортисте.</span></div>
         </li>
+        <li>
+          <div class="collapsible-header" id="text_2">Како се могу прикључити удружењу? Да ли постоје неки захтеви за чланство?</div>
+          <div class="collapsible-body"  id="text_2"><span>Да бисте се прикључили удружењу, нема посебних процедура. Довољно је да платите чланарину и активно учествујете на нашим акцијама и догађајима.</span></div>
+        </li>
+
+        <li>
+          <div class="collapsible-header" id="text_2"> Како се плаћа чланарина?</div>
+          <div class="collapsible-body"  id="text_2"><span>Чланарина се плаћа у три годишња интервала, у априлу, августу и децембру и за сваки наведени интервал износи 1500 дин. Може се платити и за читаву годину одједном - 4500 дин. Новац се може уплатити на рачун удружења 220-165604-17.</span></div>
+        </li>
+
+        <li>
+          <div class="collapsible-header" id="text_2"> Које врсте активности и догађаја организујете?</div>
+          <div class="collapsible-body"  id="text_2"><span>Организујемо планинарске акције, излете, камповања, шетње и друге активности сличног карактера.</span></div>
+        </li>
+
+        <li>
+          <div class="collapsible-header" id="text_2"> Како се финансирају активности удружења?</div>
+          <div class="collapsible-body"  id="text_2"><span>Финансирамо се чланаринама, као и донацијама и спонзорствима уколико их успоставимо. Саме акције се ипак најчешће плаћају посебно у зависности од обима акције, броја људи, места и превоза. Цене су увек врло разумне а акције приуштиве.</span></div>
+        </li>
+
+        <li>
+          <div class="collapsible-header" id="text_2">Да ли су активности отворене за све узрасте?</div>
+          <div class="collapsible-body"  id="text_2"><span>Наше удружење није отворено за чланове млађе од 15 година. Циљ нам је да учествују млади људи између 15 и 30 година, јер се фокусирамо на младе људе и активности које су њима прилагођене. Гледамо да избегнемо сукоб генерација.</span></div>
+        </li>
+
+
+        <li>
+          <div class="collapsible-header" id="text_2">Шта ако не могу да присуствујем неким акцијама или догађајима?</div>
+          <div class="collapsible-body"  id="text_2"><span>Учешће на акцијама није обавезно, али је пожељно јер чланарину плаћате да бисте учествовали. Наравно, разумемо да неко можда неће моћи да присуствује неким догађајима и то није проблем, али је важно да се чланови активно укључе.</span></div>
+        </li>
+
+        <li>
+          <div class="collapsible-header" id="text_2">Шта подразумева независни рад сваке групе унутар удружења?</div>
+          <div class="collapsible-body"  id="text_2"><span>Свакој групи је омогућено да ради независно, тражи своје чланове и поставља своја правила која не смеју да одступају од статута удружења. Групе могу организовати своје посебне акције и активности у складу са својим интересима.</span></div>
+        </li>
+        
       </ul>
 
 
@@ -258,21 +397,22 @@
     <div class="container">
   
       <div class="row">
-        <h3 id="naslov1">Kontakti</h3>
-        <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <hr>
+        <h3 id="naslov_2">КОНТАКТ</h3>
       </div>
+      
   
       <div class="row">
-        <div class="col l6">
-          <ul id="listakon">
-            <li ><p id="listakon"><b>Telefon 1:</b> +3811234567890</p></li>
-            <li ><b>Telefon 2:</b> +3811234567890</li>
-            <li ><b>E mail 1:</b> prviemail@email.mail</li>
-            <li ><b>E mail 2:</b> prviemail@email.mail</li>
+        <div class="col l6 s12">
+          <ul>
+            <li ><p id="listakon"><b>Председник удружења k.tel:</b> +381601620210</p></li>
+            <li ><b>Instagram:</b> <a href="https://www.instagram.com/psu.jastreb/"> @psu.jastreb</a></li>
+            <li ><b>E-Mail</b> jastreb2025@gmail.com</li>
   
           </ul>
+        </div>
+        <div class="col l6 s12">
+          <img src="foto/slika3.png" alt="Planinarski izazov" class="responsive-img materialboxed z-depth-2" style="max-width: 80%;">
+
         </div>
       </div>
   
@@ -284,7 +424,7 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Footer Content</h5>
+          <h5 class="white-text">МИ НИСМО НИКАД КЛОНУЛИ ДУХОМ – НИТИ ЋЕМО!</h5>
        
         </div>
         <div class="col l4 offset-l2 s12">
@@ -297,7 +437,7 @@
     </div>
     <div class="footer-copyright">
       <div class="container">
-      © 2022 Copyright Text
+      © 2025 ПСУ ЈАСТРЕБ
   
       </div>
     </div>
@@ -305,16 +445,94 @@
 
 </html>
 
+
+<!--END OF PAGE-->
+<script type="text/javascript" src="js/materialize.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="aos.js"></script>
+<script src="pre.js" charset="utf-8"></script>
+
 <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Inicijalizacija Sidenav-a
-        var sidenav = document.querySelectorAll('.sidenav');
-        M.Sidenav.init(sidenav);
+ document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems, options);
+  });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.carousel');
+    var instances = M.Carousel.init(elems, {
+      fullWidth: true,
+      indicators: true,
+      duration: 200 // brzina tranzicije u milisekundama
+    });
+    
+    // Automatsko rotiranje svake 3 sekunde
+    setInterval(function() {
+      var instance = M.Carousel.getInstance(document.getElementById('myCarousel'));
+      instance.next();
+    }, 3000); // 3000ms = 3 sekunde
+  });
+
+  // JavaScript ispravka
+document.addEventListener('DOMContentLoaded', function() {
+  // Inicijalizacija sidenav-a
+  var elems = document.querySelectorAll('.sidenav');
+  var instances = M.Sidenav.init(elems, {
+    edge: 'left', // strana s koje se otvara
+    draggable: true, // omogući povlačenje prstom
+    inDuration: 250, // animacija otvaranja
+    outDuration: 200 // animacija zatvaranja
+  });
+  
+  // Dodajemo event listener za sve linkove u sidenav-u
+  document.querySelectorAll('.sidenav a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+      // Provera da li link ima href
+      if(this.getAttribute('href')) {
+        // Zatvori sidenav nakon klika
+        var sidenavInstance = M.Sidenav.getInstance(document.getElementById('mobile-demo'));
+        sidenavInstance.close();
+      }
+    });
+  });
+});
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialize carousel with autoplay
+  var carouselElems = document.querySelectorAll('.carousel');
+  var carouselInstances = M.Carousel.init(carouselElems, {
+    fullWidth: true,
+    indicators: true,
+    duration: 200,
+    dist: 0,
+    padding: 20,
+    noWrap: false
+  });
+
+  // Set autoplay for all carousels
+  carouselInstances.forEach(function(instance) {
+    setAutoplay(instance);
+  });
+
+  function setAutoplay(instance) {
+    var interval = setInterval(function() {
+      instance.next();
+    }, 3000); // Change slide every 3 seconds
+
+    // Pause on hover
+    instance.el.addEventListener('mouseenter', function() {
+      clearInterval(interval);
     });
 
-    document.addEventListener('DOMContentLoaded', function() {
-        // Inicijalizacija Collapsible
-        var collapsibles = document.querySelectorAll('.collapsible');
-        M.Collapsible.init(collapsibles);
+    // Resume on mouse leave
+    instance.el.addEventListener('mouseleave', function() {
+      interval = setInterval(function() {
+        instance.next();
+      }, 3000);
     });
+  }
+});
+//animate on scroll init
+AOS.init();
 </script>
+
