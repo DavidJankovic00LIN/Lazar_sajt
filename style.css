@@ -290,4 +290,14 @@ nav{
 	
 	.carousel .carousel-item img {
 	  max-height: 380px;
-	}
+	} 
+
+/*gallery style*/
+
+
+
+
+#gallery{
+	background-color: #063970;
+	padding-top: 100px;
+}
