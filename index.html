@@ -1,108 +1,115 @@
+<!DOCTYPE html>
 <html>
 
 <head>
-    <title>ПСУ ЈАСТРЕБ</title>
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ПСУ ЈАСТРЕБ</title>
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Import Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Kombinovani fontovi -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!--My css-->
-    <link rel="stylesheet" href="style.css">
+  <!-- CSS biblioteke -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Lični CSS -->
+  <link rel="stylesheet" href="style.css">
 
-    <!--Animate on Scroll-->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
-    <!-- Viewport meta tag -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-    <!--FONTS USED -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&display=swap" rel="stylesheet">
+  <!-- JS biblioteke (defer) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
 </head>
 
 
 <body>
-
-</body>
 <!--NAV-->
+
+
 <div class="navbar-fixed">
-<nav>
+  <nav>
     <div class="nav-wrapper">
-        <div class="container">
-      <a href="#!" class="brand-logo"><img src="foto/logo.webp"  id="logo"></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down" id="navigacija">
-        
-        <li><a href="#about_us" id="nav_text">О нама</a></li>
-        <li><a href="#org_misson" id="nav_text">Наша мисија</a></li>
-        <li><a href="#about_work" id="nav_text">Групе</a></li>
-      <!--  <li><a href="">Галерија</a></li> -->
-        <li><a href="#QandA" id="nav_text">Најчешћа питања</a></li>
-        <li><a href="#kontakt" id="nav_text">Контакт</a></li>
-      </ul>
-    </div>
+      <div class="container">
+        <!-- Logo -->
+        <a href="#!" class="brand-logo">
+          <img src="foto/logo.webp" id="logo" alt="Лого Јастреб">
+        </a>
+
+        <!-- Desktop navigacija -->
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#about_us">О нама</a></li>
+          <li><a href="#org_misson">Наша мисија</a></li>
+          <li><a href="#about_work">Групе</a></li>
+          <li><a href="#QandA">Најчешћа питања</a></li>
+          <li><a href="#kontakt">Контакт</a></li>
+        </ul>
+
+        <!-- Mobilni meni -->
+        <ul class="right hide-on-large-only">
+          <li>
+            <a class="dropdown-trigger" href="#" data-target="mobile-dropdown">
+              <i class="material-icons">menu</i>
+            </a>
+          </li>
+        </ul>
+
+        <!-- Dropdown sadržaj -->
+        <ul id="mobile-dropdown" class="dropdown-content">
+          <li><a href="#about_us" class="mobile-nav-link waves-effect">О нама</a></li>
+          <li><a href="#org_misson" class="mobile-nav-link waves-effect">Наша мисија</a></li>
+          <li><a href="#about_work" class="mobile-nav-link waves-effect">Групе</a></li>
+          <li><a href="#QandA" class="mobile-nav-link waves-effect">Најчешћа питања</a></li>
+          <li><a href="#kontakt" class="mobile-nav-link waves-effect">Контакт</a></li>
+        </ul>
+      </div>
     </div>
   </nav>
-
-  
-<ul class="sidenav" id="mobile-demo">
-  <li><a href="#about_us" id="nav_text">О нама</a></li>
-  <li><a href="#org_misson" id="nav_text">Наша мисија</a></li>
-  <li><a href="#about_work" id="nav_text">Групе</a></li>
-  <li><a href="#QandA" id="nav_text">Најчешћа питања</a></li>
-  <li><a href="#kontakt" id="nav_text">Контакт</a></li>
-</ul>
-
 </div>
+
+
 
 <!--Landing page-->
 <div id="landing_page" style="background-image: url('foto/mnk2.png'); 
                               background-size: cover;
                               background-position: center;
                               background-repeat: no-repeat;
-                              height: 100vh;
+                              min-height: 100vh;
                               width: 100%;
-                              position: relative;">
+                              position: relative;
+                              padding-top: 64px; /* Visina navigacije */
+                              box-sizing: border-box;">
   
-  <!-- Content over the background image -->
-  <div class="container" style="position: relative; z-index: 1; height: 100%;">
-    <div class="valign-wrapper" style="height: 100%;">
-      <div class="center-align white-text" style="width: 100%;">
-        <h2 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-weight: 700;">
+  <!-- Overlay za bolju čitljivost -->
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);"></div>
+  
+  <!-- Sadržaj sa Materialize gridom -->
+  <div class="container" style="position: relative; z-index: 1; height: calc(100vh - 64px); display: flex; align-items: center;">
+    <div class="row">
+      <div class="col s12 m8 offset-m2 l6 offset-l3 center-align white-text">
+        <h2 style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-weight: 700; margin-top: 0;">
           МИ НИСМО НИКАД КЛОНУЛИ ДУХОМ!
         </h2>
-      </div>
-      <div class="row">
-        
-        <a class="waves-effect waves-light btn-large" href="#about_us" id="start_dugme">УПОЗНАЈ&nbsp;НАС</a>
+        <div class="row">
+          <div class="col s12">
+            <a href="#about_us" class="cta-button waves-effect waves-light">УПОЗНАЈ НАС</a>
+          </div>
+        </div>
       </div>
     </div>
-   
   </div>
-
- 
-  
 </div>
+
+
+
 <!--About us-->
 <div id="about_us" class="scrollspy">
   <div class="container">
@@ -423,16 +430,11 @@
 <footer class="page-footer">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">МИ НИСМО НИКАД КЛОНУЛИ ДУХОМ – НИТИ ЋЕМО!</h5>
+        <div class="col l7 s12">
+          <h5 class="white-text">МИ НИСМО НИКАД КЛОНУЛИ ДУХОМ !</h5>
        
         </div>
-        <div class="col l4 offset-l2 s12">
-         
-          <ul>
-            
-          </ul>
-        </div>
+      
       </div>
     </div>
     <div class="footer-copyright">
@@ -447,92 +449,60 @@
 
 
 <!--END OF PAGE-->
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="aos.js"></script>
-<script src="pre.js" charset="utf-8"></script>
+
 
 <script>
  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.sidenav');
-    var instances = M.Sidenav.init(elems, options);
+  // Inicijalizacija dropdown-a
+  var dropdownElems = document.querySelectorAll('.dropdown-trigger');
+  var dropdownInstances = M.Dropdown.init(dropdownElems, {
+    coverTrigger: false,
+    constrainWidth: false,
+    closeOnClick: false, // Ovo je ključno promenjeno
+    alignment: 'right',
+    hover: false
   });
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.carousel');
-    var instances = M.Carousel.init(elems, {
-      fullWidth: true,
-      indicators: true,
-      duration: 200 // brzina tranzicije u milisekundama
-    });
-    
-    // Automatsko rotiranje svake 3 sekunde
-    setInterval(function() {
-      var instance = M.Carousel.getInstance(document.getElementById('myCarousel'));
-      instance.next();
-    }, 3000); // 3000ms = 3 sekunde
-  });
-
-  // JavaScript ispravka
-document.addEventListener('DOMContentLoaded', function() {
-  // Inicijalizacija sidenav-a
-  var elems = document.querySelectorAll('.sidenav');
-  var instances = M.Sidenav.init(elems, {
-    edge: 'left', // strana s koje se otvara
-    draggable: true, // omogući povlačenje prstom
-    inDuration: 250, // animacija otvaranja
-    outDuration: 200 // animacija zatvaranja
-  });
-  
-  // Dodajemo event listener za sve linkove u sidenav-u
-  document.querySelectorAll('.sidenav a').forEach(function(link) {
+  // Rukovanje klikovima na mobilne linkove
+  document.querySelectorAll('.mobile-nav-link').forEach(function(link) {
     link.addEventListener('click', function(e) {
-      // Provera da li link ima href
-      if(this.getAttribute('href')) {
-        // Zatvori sidenav nakon klika
-        var sidenavInstance = M.Sidenav.getInstance(document.getElementById('mobile-demo'));
-        sidenavInstance.close();
-      }
+      // Zatvori dropdown
+      var dropdownInstance = M.Dropdown.getInstance(document.querySelector('.dropdown-trigger'));
+      if(dropdownInstance) dropdownInstance.close();
+      
+      // Delay za zatvaranje dropdown-a pre navigacije
+      setTimeout(function() {
+        var target = link.getAttribute('href');
+        if(target) {
+          // Provera da li sekcija postoji
+          var targetElement = document.querySelector(target);
+          if(targetElement) {
+            e.preventDefault();
+            targetElement.scrollIntoView({
+              behavior: 'smooth'
+            });
+            
+            // Ažuriraj URL bez reload-a stranice
+            history.pushState(null, null, target);
+          }
+        }
+      }, 100); // Mali delay osigurava da se dropdown zatvori pre skrolovanja
     });
   });
-});
-document.addEventListener('DOMContentLoaded', function() {
-  // Initialize carousel with autoplay
+
+  // Inicijalizacija ostalih komponenti
+  var collapsibleElems = document.querySelectorAll('.collapsible');
+  M.Collapsible.init(collapsibleElems);
+
   var carouselElems = document.querySelectorAll('.carousel');
-  var carouselInstances = M.Carousel.init(carouselElems, {
+  M.Carousel.init(carouselElems, {
     fullWidth: true,
-    indicators: true,
-    duration: 200,
-    dist: 0,
-    padding: 20,
-    noWrap: false
+    indicators: true
   });
 
-  // Set autoplay for all carousels
-  carouselInstances.forEach(function(instance) {
-    setAutoplay(instance);
-  });
-
-  function setAutoplay(instance) {
-    var interval = setInterval(function() {
-      instance.next();
-    }, 3000); // Change slide every 3 seconds
-
-    // Pause on hover
-    instance.el.addEventListener('mouseenter', function() {
-      clearInterval(interval);
-    });
-
-    // Resume on mouse leave
-    instance.el.addEventListener('mouseleave', function() {
-      interval = setInterval(function() {
-        instance.next();
-      }, 3000);
-    });
-  }
+  // Inicijalizacija AOS
+  AOS.init();
 });
-//animate on scroll init
-AOS.init();
 </script>
 
+</body>
