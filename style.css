@@ -332,3 +332,7 @@ nav{
 	align-items: center;
   justify-content: center;
 }
+
+.parallax-container {
+	height:400px;
+  }

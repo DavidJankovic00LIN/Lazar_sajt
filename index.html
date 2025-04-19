@@ -329,8 +329,8 @@
       <!-- Prvi red - tekst 1 i slika 1 -->
       <div class="row">
           <div class="col s12 l7" data-aos="fade-right">
-              <h3 id="naslov_1">Желите да видите како наше друштво изгледа на делу?</h3>
-              <h3 id="naslov_1">-Посетите нашу галерију </h3>
+              <h3 id="naslov_1">Желите да видите како наше удружење изгледа у акцији?</h3>
+              <h3 id="naslov_1">Посетите нашу галерију !</h3>
           </div>
           
           <div class="col s12 l5" data-aos="fade-left">
@@ -420,7 +420,11 @@
 
   </div>
 
+<!--PARALAX Borbeni logo-->
 
+<div class="parallax-container">
+  <div class="parallax"><img src="foto/brb_logo.webp"></div>
+</div>
 
 
 
@@ -529,5 +533,10 @@
   // Inicijalizacija AOS
   AOS.init();
 });
+
+
+$(document).ready(function(){
+    $('.parallax').parallax();
+  });
 </script>
 
