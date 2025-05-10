@@ -5,35 +5,44 @@
 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
   <title>ПСУ ЈАСТРЕБ</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <!-- Kombinovani fontovi -->
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Serif&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
   <!-- Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <!-- CSS biblioteke -->
+  <!-- CSS libs-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
-  <!-- Lični CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 
-  <!-- JS biblioteke (defer) -->
+  <!-- JS-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="preloader.js" charset="utf-8"></script>
 
 
 </head>
 
 
 <body>
-<!--NAV-->
 
+<!--PRELOADER------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<div class="loader">
+  <img src="foto/brb_logo.webp" alt="Loading...">
+</div>
+
+<!--NAV------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <div class="navbar-fixed">
   <nav>
@@ -49,6 +58,7 @@
           <li><a href="#about_us">О нама</a></li>
           <li><a href="#org_misson">Наша мисија</a></li>
           <li><a href="#about_work">Групе</a></li>
+          <li><a href="#NEWS">Новости</a></li>
           <li><a href="gallery.html">Галерија</a></li>
           <li><a href="#QandA">Најчешћа питања</a></li>
           <li><a href="#kontakt">Контакт</a></li>
@@ -67,6 +77,7 @@
         <ul id="mobile-dropdown" class="dropdown-content">
           <li><a href="#about_us" class="mobile-nav-link waves-effect">О нама</a></li>
           <li><a href="#org_misson" class="mobile-nav-link waves-effect">Наша мисија</a></li>
+          <li><a href="#NEWS" class="mobile-nav-link waves-effect">Новости</a></li>
           <li><a href="#about_work" class="mobile-nav-link waves-effect">Групе</a></li>
           <li><a href="gallery.html" class="mobile-nav-link waves-effect">Галерија</a></li>
           <li><a href="#QandA" class="mobile-nav-link waves-effect">Најчешћа питања</a></li>
@@ -79,7 +90,8 @@
 
 
 
-<!--Landing page-->
+<!--LANDING PAGE------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 <div id="landing_page" style="background-image: url('foto/mnk2.png'); 
                               background-size: cover;
                               background-position: center;
@@ -90,10 +102,9 @@
                               padding-top: 64px; /* Visina navigacije */
                               box-sizing: border-box;">
   
-  <!-- Overlay za bolju čitljivost -->
   <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.3);"></div>
   
-  <!-- Sadržaj sa Materialize gridom -->
+ 
   <div class="container" style="position: relative; z-index: 1; height: calc(100vh - 64px); display: flex; align-items: center;">
     <div class="row">
       <div class="col s12 m8 offset-m2 l6 offset-l3 center-align white-text">
@@ -111,13 +122,14 @@
 </div>
 
 
+<!--ABOUT US------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-<!--About us-->
+
 <div id="about_us" class="scrollspy">
   <div class="container">
       <br><br>
       
-      <!-- Prvi red - tekst 1 i slika 1 -->
+      
       <div class="row">
           <div class="col s12 l7" data-aos="fade-right">
               <h3 id="naslov_1">О нама</h3>
@@ -137,7 +149,7 @@
           </div>
       </div>
       
-      <!-- Drugi red - tekst 2 i slika 2 -->
+      
       <div class="row">
           <div class="col s12 l7 push-l5" data-aos="fade-left">
               <p class="textovi" id="text_1">
@@ -159,12 +171,13 @@
   <br>
 </div>
 
-<!-- CILJEVI DRUSTVA -->         
+<!--GOALS------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+       
 <div id="org_misson" class="scrollspy">
   <div class="container">
       <br><br>
       
-      <!-- Prvi red - tekst 1 i slika 1 -->
+     
       <div class="row">
           <div class="col s12 l7" data-aos="fade-right">
             <h3 id="naslov_2">ЦИЉЕВИ</h3>
@@ -200,7 +213,7 @@
           </div>
       </div>
       
-      <!-- Drugi red - tekst 2 i slika 2 -->
+     
       <div class="row">
           <div class="col s12 l7 push-l5" data-aos="fade-left">
             <ul>
@@ -228,10 +241,38 @@
   </div>
   <br>
 </div>
+<!--NEWS -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div id="NEWS" class="scrollspy">
+<div class="container">
+  <div class="row">
+    <h3 id="naslov_2" data-aos="fade-right">Новости</h3>
+    <br>
+    <p id="text_2" data-aos="fade-left">Останите у току са најновијим догађајима</p>
+  </div>
+  <br>
+  <div class="row">
+     
+    <div class="slider" data-aos="fade-in">
+      <ul class="slides">
+        <li>
+          <img src="news/1.jpg">  
+        </li>
+        <li>
+          <img src="news/2.jpg">
+        </li>
+        <li>
+          <img src="news/3.jpg"> 
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
 
 
+<!--ABOUT GROUPS------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-<!--O grupama-->
 <div id="about_work"  class="scrollspy">
   <div class="container">
       <br>
@@ -341,7 +382,7 @@
           </div>
       </div>
       
-      <!-- Drugi red - tekst 2 i slika 2 -->
+     
      
   </div>
   <br>
@@ -420,15 +461,16 @@
 
   </div>
 
-<!--PARALAX Borbeni logo-->
+<!--PARALAX LOGO------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
 <div class="parallax-container">
-  <div class="parallax"><img src="foto/brb_logo.webp"></div>
+  <div class="parallax"><img src="foto/brb_logo_V5.jpeg"></div>
 </div>
 
 
 
-<!--Contact-->
+<!--CONTACT ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 <div id="kontakt">
     <div class="container">
   
@@ -455,7 +497,8 @@
     </div>
   </div>
 
-<!--Footer-->
+<!--FOOTER------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 <footer class="page-footer">
     <div class="container">
       <div class="row">
@@ -478,7 +521,8 @@
 </html>
 
 
-<!--END OF PAGE-->
+<!--END OF PAGE------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+
 
 
 <script>
@@ -538,5 +582,19 @@
 $(document).ready(function(){
     $('.parallax').parallax();
   });
+
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.slider');
+    var instances = M.Slider.init(elems, options);
+  });
+
+  // Or with jQuery
+
+  $(document).ready(function(){
+    $('.slider').slider();
+  });
+
+
 </script>
 

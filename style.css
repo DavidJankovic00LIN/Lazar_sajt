@@ -19,7 +19,9 @@ html, body {
 }
 
 nav{
-	background-color:#1c1c3b;
+	background-color:#1d1e37;
+	/* new #1d1e37*/
+	/*old 1c1c3b */
 	height:64px;
 	/*background-color: #676F54;*/
 }
@@ -334,5 +336,45 @@ nav{
 }
 
 .parallax-container {
-	height:400px;
+	height:450px;
   }
+
+/*preloader*/
+/* Preloader styles */
+.loader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #063970;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 9999;
+	transition: opacity 0.5s ease, visibility 0.5s ease;
+  }
+  
+  .loader img {
+	width: 150px;
+	height: auto;
+	animation: pulse 1.5s infinite;
+  }
+  
+  .loader.hidden {
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+  }
+  
+  @keyframes pulse {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.1); }
+	100% { transform: scale(1); }
+  }
+
+/*News slider*/
+.slider{
+	height: auto;
+	
+}
