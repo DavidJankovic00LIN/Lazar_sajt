@@ -88,28 +88,30 @@
 
         <!--RED 1-->
         <div class="row">
-            <div class="col l6">
-              <a href="divcibare_2025.html"><img src="foto/ikonica.png" id="gallery_photo" ></a>
+          <div class="col l4 s12">
+              <div class="circle-image-container">
+                  <a href="prvi_maj_2025.html">
+                      <img src="foto/ikonica1.jpeg" alt="Divčibare 2025" class="circle-image">
+                  </a>
+              </div>
+          </div>
+          <div class="col l4 s12">
+              <div class="circle-image-container">
+                  <a href="strazilovo_2025.html">
+                      <img src="foto/ikonica2.jpeg" alt="Prvi Maj 2025" class="circle-image">
+                  </a>
+              </div>
+          </div>
+          <div class="col l4 s12">
+            <div class="circle-image-container">
+                <a href="divcibare_2025.html">
+                    <img src="foto/ikonica3.jpeg" alt="Prvi Maj 2025" class="circle-image">
+                </a>
             </div>
-
-            <div class="col l6">
-              <a href="prvi_maj_2025.html"><img src="foto/ikonica2.jpg" id="gallery_photo" ></a>
-            </div>
-
-
         </div>
-        
-        <br>
 
-        <div class="row">
-          <div class="col l6">
-            <a href="strazilovo_2025.html"><img src="foto/ikonica3.jpg" id="gallery_photo" ></a>
-          </div>
 
-          <div class="col l6">
-          <!--  <a href="prvi_maj_2025.html"><img src="foto/ikonica2.png" id="gallery_photo" ></a> -->
-          </div>
-
+      </div>
 
       </div>
         
@@ -198,30 +200,36 @@
    </script>
 
 <style>
-body{
-    background-color: #063970;
-}    
-#gallery_photo {
+/* Kontejner koji osigurava da slika bude krug */
+.circle-image-container {
     width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%; /* Savršeni krug */
+    aspect-ratio: 1/1; /* Omjer 1:1 (kvadrat) */
+    margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Stilizacija same slike */
+.circle-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Sprječava istezanje slike */
+    display: block;
     transition: transform 0.3s ease;
 }
 
-#gallery_photo:hover {
-    transform: scale(1.02);
+/* Hover efekat */
+.circle-image-container:hover .circle-image {
+    transform: scale(1.05);
 }
 
-/* Responsive prilagodba */
-@media only screen and (max-width: 600px) {
-    .row .col.l6 {
-        width: 100%;
-    }
-    
-    #gallery_photo {
-        margin-bottom: 10px;
+/* Responsive prilagodba za manje ekrane */
+@media (max-width: 600px) {
+    .circle-image-container {
+        width: 80%;
+        margin: 0 auto 20px; /* Centriranje na mobilnim */
     }
 }
 </style>
