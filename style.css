@@ -46,7 +46,7 @@ nav{
     }
 }
 .page-footer{
-	background-color:#1c1c3b
+	background-color:#1d1e37
 	
 }
 
@@ -379,4 +379,48 @@ nav{
 	
 }
 
-/*News card*/
+/*SVG items*/
+  .kontakt-lista {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .kontakt-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .kontakt-item svg {
+    margin-right: 15px;
+    flex-shrink: 0;
+  }
+  
+  .kontakt-item a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .kontakt-item a:hover {
+    color: #1e88e5;
+    text-decoration: underline;
+  }
+  
+ .footer-links li, .social-links li {
+    padding: 5px 0;
+  }
+  
+  .hover-accent {
+    transition: color 0.3s ease;
+  }
+  
+  .hover-accent:hover {
+    color: #ff6b6b !important;
+    text-decoration: none;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .footer-links, .social-links {
+      margin-top: 20px;
+    }
