@@ -1,6 +1,6 @@
 /* boje koje mije lazar posalo : 6ABEA7 0094C6 */
 * {
-	
+	 
 	margin: 0;
   	padding: 0;
   	box-sizing: border-box;
@@ -115,76 +115,66 @@ nav{
   } /* Ovo je zagrada koja nedostaje */
 
 
-/* Osnovni stilovi */
-.equal-height-cards {
-	display: flex;
-	flex-wrap: wrap;
-  }
-  
-  .equal-height-cards .col {
-	display: flex;
-	flex-direction: column;
-	padding: 0 15px; /* Dodaje prostor između kartica */
-	margin-bottom: 30px; /* Razmak ispod kartica na mobilnim */
-  }
-  
+/* Kartice o grupama*/
+
+/* Dodajte ovaj CSS */
   .card-wrapper {
-	height: 100%;
-	display: flex;
-	flex-direction: column;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   
   .card {
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	border-radius: 8px;
-	overflow: hidden;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  
-  .card-image {
-	flex-shrink: 0;
-  }
-  
-  .card-image img {
-	width: 100%;
-	height: 200px;
-	object-fit: cover;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   
   .card-content {
-	flex-grow: 1;
-	padding: 20px;
-	display: flex;
-	flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    position: relative;
   }
+
+ 
   
+
   .text-container {
-	flex-grow: 1;
-	overflow-y: auto; /* Omogućava skrolovanje ako tekst ne stane */
-	max-height: 200px; /* Ograničava visinu teksta */
-	padding-right: 10px;
-	}
-  
-  .textovi {
-	text-align: justify;
-	hyphens: auto;
-	margin: 0;
-	line-height: 1.6;
+ 
+    overflow: hidden;
+    position: relative;
   }
   
-  /* Responsive prilagodbe */
-  @media only screen and (max-width: 992px) {
-	.equal-height-cards .col {
-	  flex: 0 0 100%;
-	  max-width: 100%;
-	}
-	
-	.text-container {
-	  max-height: none; /* Uklanja ograničenje visine na mobilnim */
-	}
+  .text-container:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+  }
+  
+  .read-more-btn {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .expanded .text-container {
+    max-height: none;
+  }
+  
+  .expanded .text-container:after {
+    display: none;
+  }
+#group_card{
+	height: 280px;
+
+}
+ #tekst_kutija{
+	height: 275px;
   }
   
   /* Animacija za hover efekat */
@@ -424,3 +414,33 @@ nav{
     .footer-links, .social-links {
       margin-top: 20px;
     }
+
+
+	.kontakt-lista {
+  padding-left: 0;
+}
+
+.kontakt-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.kontakt-item svg {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.kontakt-item p {
+  margin: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .kontakt-lista {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .kontakt-item {
+    margin-bottom: 10px;
+  }
+}
