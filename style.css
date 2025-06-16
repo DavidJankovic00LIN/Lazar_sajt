@@ -118,41 +118,75 @@ nav{
 /* Kartice o grupama*/
 
 /* Dodajte ovaj CSS */
+ .equal-height-cards {
+	display: flex;
+	flex-wrap: wrap;
+  }
+  
+  .equal-height-cards .col {
+	display: flex;
+	flex-direction: column;
+	padding: 0 15px; /* Dodaje prostor između kartica */
+	margin-bottom: 30px; /* Razmak ispod kartica na mobilnim */
+  }
+  
   .card-wrapper {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
   }
   
   .card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .card-image {
+	flex-shrink: 0;
+  }
+  
+  .card-image img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
   }
   
   .card-content {
-    flex: 1;
-    overflow: hidden;
-    position: relative;
+	flex-grow: 1;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
   }
-
- 
   
-
   .text-container {
- 
-    overflow: hidden;
-    position: relative;
+	flex-grow: 1;
+	overflow-y: auto; /* Omogućava skrolovanje ako tekst ne stane */
+	max-height: 200px; /* Ograničava visinu teksta */
+	padding-right: 10px;
+	}
+  
+  .textovi {
+	text-align: justify;
+	hyphens: auto;
+	margin: 0;
+	line-height: 1.6;
   }
   
-  .text-container:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 30px;
-    background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+  /* Responsive prilagodbe */
+  @media only screen and (max-width: 992px) {
+	.equal-height-cards .col {
+	  flex: 0 0 100%;
+	  max-width: 100%;
+	}
+	
+	.text-container {
+	  max-height: none; /* Uklanja ograničenje visine na mobilnim */
+	}
   }
   
   .read-more-btn {
@@ -443,4 +477,26 @@ nav{
   .kontakt-item {
     margin-bottom: 10px;
   }
+}
+
+
+/*Modal stil */
+
+/* Додајте ово у ваш style.css */
+.modal {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  top: 0 !important;
+  left: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.modal-content {
+  height: calc(100% - 56px); /* 56px је висина футера */
+  padding: 24px;
+  overflow-y: auto;
 }

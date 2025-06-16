@@ -299,12 +299,12 @@
 
 <!--ABOUT GROUPS------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-<div id="about_work" class="scrollspy">
+<div id="about_work"  class="scrollspy">
   <div class="container">
       <br>
       <br>
       <div class="row">
-         <div class="col l8 offset-l2">
+         <div class="col l8 offset-l2"  >
           <h3 id="naslov_2">O групама</h3>
              <p id="text_2" data-aos="fade-left">Наш је састав разнолик, те смо вољни да у редове прихватимо младе људе, ентузијасте у било којој културној, спортској или научној сфери живота. Рад и организација у секцијама-групама пружа свакоме могућност да се пронађе у ономе што воли и самим тим окружи себе, себи сличнима. Поред неизоставног дружења у дивљини, природа одређене групе којој члан удружења припада ствара простор за креативно размишљање и колективну сарадњу, па на тај начин не само индивидуално, већ заједнички са осталима достиже висине у сфери интересовања. 
               Група покрива одређени архетип и развија своју нишу у оквиру удружења. Група има вођу, заменика и своје чланове. Група има своју аутономију.
@@ -312,9 +312,11 @@
               <br>
               <br>
           </div> 
+          
       </div>
    </div>   
 </div>
+
 
 <!--Individual group info-->
 <div id="team_info2" class="scrollspy">
@@ -715,6 +717,18 @@
       }, 100); // Mali delay osigurava da se dropdown zatvori pre skrolovanja
     });
   });
+
+  //modal
+$(document).ready(function(){
+  $('.modal').modal({
+    opacity: 0.5,
+    inDuration: 300,
+    outDuration: 200,
+    dismissible: true,
+    startingTop: '0%',
+    endingTop: '0%'
+  });
+});
 
   // Inicijalizacija ostalih komponenti
   var collapsibleElems = document.querySelectorAll('.collapsible');
