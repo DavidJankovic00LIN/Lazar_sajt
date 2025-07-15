@@ -25,7 +25,7 @@
   
   <!--Adding favicons-->
   <!-- Basic Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
 
   <!-- Other  -->
   <link rel="icon" href="favicon/favicon-32x32.png" type="image/png" sizes="32x32">
@@ -56,7 +56,7 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="preloader.js" charset="utf-8"></script>
+  
 
 
 </head>
@@ -64,12 +64,6 @@
 
 <body>
 
-<!--PRELOADER------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
-<!-- in production
-
-<div class="loader">
-  <img src="foto/brb_logo.webp" alt="Loading...">
-</div>-->
 
 <!--NAV------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -222,6 +216,8 @@
               <br>
               <li data-aos="fade-up" id="text_2"><i class="material-icons" id="bullet_point"> brightness_1</i>Организовати што више акција, камповања, маршева, других догађаја и окупљања</li>
               <br>
+              <li data-aos="fade-up" id="text_2"><i class="material-icons" id="bullet_point"> brightness_1</i> Развијање знања у домену радио-аматеризма и ступање у Савез радио-аматера Србије што више акција, камповања, маршева, других догађаја и окупљања</li>
+              <br>
             </ul>
           </div>
           
@@ -323,9 +319,11 @@
   <div class="container">
     <br>
     
-    <div class="row" style="overflow-x: hidden;">   <!-- Dodao sam overflow-x: hidden -->
+    <!-- PRVI RED -->
+    <div class="row" >
+      
       <!-- Prva kartica -->
-      <div class="col s12 m4 l4" data-aos="fade-right">  <!-- Dodao sam m4 za srednje ekrane -->
+      <div class="col s12 m6 l6" data-aos="fade-right">
         <div class="card-wrapper">
           <h4>
             Група<span class="hide-on-large-only"> </span><br class="show-on-med-and-down"> за уметност
@@ -336,7 +334,8 @@
             </div>
             <div class="card-content">
               <div class="text-container" id="tekst_kutija">
-                <p class="textovi" id="text_3">Група за уметност пружа могућност стицања знања из свих области уметности током трајања акција. Полазници ће, поред теоријских, имати могућност да стекну и практична знања, примене их и створе сопствена уметничка дела, било то песма, цртеж, фотографија, филм... Полазници ће касније имати прилику да изложе своје радове на акцијама које се организују на нивоу друштва.</p>
+                <p class="textovi" id="text_3">
+Група за уметност пружа могућност стицања знања из свих области уметности током трајања акција. Полазници ће, поред теоријских, имати могућност да стекну и практична знања, примене их и створе сопствена уметничка дела, било то песма, цртеж, фотографија, филм... Полазници ће касније имати прилику да изложе своје радове на акцијама које се организују на нивоу друштва.                </p>
               </div>
             </div>
           </div>
@@ -344,7 +343,7 @@
       </div>
       
       <!-- Druga kartica -->
-      <div class="col s12 m4 l4" data-aos="fade-up">  <!-- Dodao sam m4 za srednje ekrane -->
+      <div class="col s12 m6 l6" data-aos="fade-up">
         <div class="card-wrapper">
           <h4>
             Колекционарска<span class="hide-on-large-only"> </span><br class="show-on-med-and-down">група
@@ -355,15 +354,22 @@
             </div>
             <div class="card-content">
               <div class="text-container" id="tekst_kutija">
-                <p class="textovi" id="text_3">Колекционарска група у окупља ентузијасте који воле историју, старе предмете и добру причу. Наше интересовање обухвата широк спектар историјских артефаката — од античких новчића и књига, до војних шлемова, униформи, значки и ситница из ближе прошлости. Сваки предмет, без обзира на своју вредност или старост, за нас представља капију у неко прошло време и прилику да се боље разуме дух једног доба. Главни циљ наше групе није само прикупљање, већ дружење, разговор и размена знања.</p>
+                <p class="textovi" id="text_3">
+Колекционарска група у окупља ентузијасте који воле историју, старе предмете и добру причу. Наше интересовање обухвата широк спектар историјских артефаката — од античких новчића и књига, до војних шлемова, униформи, значки и ситница из ближе прошлости. Сваки предмет, без обзира на своју вредност или старост, за нас представља капију у неко прошло време и прилику да се боље разуме дух једног доба. Главни циљ наше групе није само прикупљање, већ дружење, разговор и размена знања.                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+
+    <br>
+
+    <!-- DRUGI RED -->
+    <div class="row" >
       
       <!-- Treća kartica -->
-      <div class="col s12 m4 l4" data-aos="fade-left">  <!-- Dodao sam m4 za srednje ekrane -->
+      <div class="col s12 m6 l6" data-aos="fade-right">
         <div class="card-wrapper">
           <h4>
             Хајдучка<span class="hide-on-large-only"> </span><br class="show-on-med-and-down">група
@@ -374,15 +380,42 @@
             </div>
             <div class="card-content">
               <div class="text-container" id="tekst_kutija">
-                <p class="textovi" id="text_3">Основни програм рада групе је истраживање неистражених локација, шетња кроз теже проходне стазе и упознавање с природом у ширем смислу, прелажења препрека, алпинизам, преживљавање у дивљини, сналажење у простору - картографија, топографија и комуникација. Спортске активности у природи попут трчања, гимнастике и разних додатних вежби уз заједнички избор. У обзир долазе и сложеније радње попут ноћних успона и шетњи без дигиталне навигације.</p>
+                <p class="textovi" id="text_3">
+Основни програм рада групе је истраживање неистражених локација, шетња кроз теже проходне стазе и упознавање с природом у ширем смислу, прелажења препрека, алпинизам, преживљавање у дивљини, сналажење у простору - картографија, топографија и комуникација. Спортске активности у природи попут трчања, гимнастике и разних додатних вежби уз заједнички избор. У обзир долазе и сложеније радње попут ноћних успона и шетњи без дигиталне навигације.
+
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Četvrta kartica  -->
+      <div class="col s12 m6 l6" data-aos="fade-up">
+        <div class="card-wrapper">
+          <h4>
+            Група за<span class="hide-on-large-only"> </span><br class="show-on-med-and-down">  Комуникацију и Логистику 
+          </h4>
+          <div class="card">
+            <div class="card-image">
+              <img src="foto/kil.jpg" alt=" Група за Комуникацију и Логистику " class="responsive-img" id="group_card">
+            </div>
+            <div class="card-content">
+              <div class="text-container" id="tekst_kutija">
+                <p class="textovi" id="text_3">
+Група за Комуникацију и Логистику (КиЛ) у најширем смислу бави се технологијама примењивим за планинарске акције, као и наукама - оруђима за боравак и оријентацију у природи. Љубав према радио-аматеризму, картографији, топографији, техници и технологији окупила је љубитеље природе и спојила два света у један. Група за КиЛ не преза од нових, модерних решења за ефективно борављење и кретање кроз дивљину, те употребу свих расположивих средстава и опреме ради побољшања организације рада и ефикасности читавог удружења.
+Deus ex machina!                
+</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
+
 
 <!--GALLERY JUMP------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
 
@@ -752,7 +785,7 @@ $(document).ready(function(){
 
   document.addEventListener('DOMContentLoaded', function() {
     var elems = document.querySelectorAll('.slider');
-    var instances = M.Slider.init(elems, options);
+    var instances = M.Slider.init(elems);
   });
 
   // Or with jQuery

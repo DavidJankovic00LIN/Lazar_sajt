@@ -10,6 +10,7 @@ html, body {
   scroll-behavior: smooth;
   width: 100%;
   overflow-x: hidden; 
+  overflow-y: auto;
 }
 
 /* Optional: Add some padding to sections to account for fixed header */
@@ -165,7 +166,7 @@ nav{
   
   .text-container {
 	flex-grow: 1;
-	overflow-y: auto; /* Omogućava skrolovanje ako tekst ne stane */
+	overflow-y: visible; /* Omogućava skrolovanje ako tekst ne stane */
 	max-height: 200px; /* Ograničava visinu teksta */
 	padding-right: 10px;
 	}
@@ -176,7 +177,9 @@ nav{
 	margin: 0;
 	line-height: 1.6;
   }
-  
+  .row {
+  overflow-y: visible !important;
+}
   /* Responsive prilagodbe */
   @media only screen and (max-width: 992px) {
 	.equal-height-cards .col {
@@ -499,4 +502,11 @@ nav{
   height: calc(100% - 56px); /* 56px је висина футера */
   padding: 24px;
   overflow-y: auto;
+}
+
+
+
+/*Fix za sidescrool*/
+#team_info2 .container {
+  overflow-x: hidden;
 }
