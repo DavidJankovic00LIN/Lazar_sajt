@@ -23,6 +23,7 @@ Allow: /favicon/
 # Allow crawling of images and photos
 Allow: /foto/
 Allow: /gallery/
+Allow: /favicon/
 
 # Disallow crawling of private/policy pages (optional - remove if you want them indexed)
 Disallow: /uslovi_koriscenja.html
