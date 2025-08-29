@@ -736,17 +736,7 @@ Deus ex machina!
     });
   });
 
-  //modal
-$(document).ready(function(){
-  $('.modal').modal({
-    opacity: 0.5,
-    inDuration: 300,
-    outDuration: 200,
-    dismissible: true,
-    startingTop: '0%',
-    endingTop: '0%'
-  });
-});
+
 
   // Inicijalizacija ostalih komponenti
   var collapsibleElems = document.querySelectorAll('.collapsible');
@@ -762,22 +752,13 @@ $(document).ready(function(){
   AOS.init();
 });
 
-
+// Parallax initialization
 $(document).ready(function(){
     $('.parallax').parallax();
   });
 
 
-  document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.slider');
-    var instances = M.Slider.init(elems);
-  });
 
-  // Or with jQuery
-
-  $(document).ready(function(){
-    $('.slider').slider();
-  });
 
 
 </script>
