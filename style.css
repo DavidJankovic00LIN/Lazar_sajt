@@ -206,22 +206,109 @@ nav{
   .expanded .text-container:after {
     display: none;
   }
-#group_card{
-	height: 280px;
 
+/* Group Cards - Equal sized, clean design */
+.group-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+  overflow: hidden;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
- #tekst_kutija{
-	height: 275px;
+
+.group-title {
+  background: linear-gradient(135deg, #2c5aa0 0%, #1e3a8a 100%);
+  color: white;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.group-card .card-image {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.group-card .card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.group-card .card-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.group-description {
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  font-size: 0.95rem;
+  text-align: justify;
+  flex-grow: 1;
+}
+
+/* Ensure equal height for all cards in a row */
+.row .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row .col .group-card {
+  height: 100%;
+  min-height: 500px; /* Set minimum height for all cards */
+}
+
+/* Force equal heights for all cards in a row */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row .col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row .col .group-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 600px) {
+  .group-title {
+    font-size: 1.2rem;
+    padding: 15px;
   }
   
-  /* Animacija za hover efekat */
-  .card:hover {
-	transform: translateY(-5px);
-	transition: transform 0.3s ease;
-	box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  .group-card .card-image {
+    height: 180px;
   }
+  
+  .group-card .card-content {
+    padding: 15px;
+  }
+  
+  .group-description {
+    font-size: 0.9rem;
+  }
+}
 
-  #bullet_point{
+#bullet_point{
 	font-size: 0.7em;
 	vertical-align: middle;
 	margin-right: 4px;
