@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ПСУ ЈАСТРЕБ - Планинарско-спортско удружење</title>
+    <link>https://www.psu-jastreb.rs/</link>
+    <description>Планинарско-спортско удружење Јастреб - Ми нисмо никad клонули духом! Планинарске активности, излети, камповања и дружења за љубитеље природе.</description>
+    <language>sr</language>
+    <lastBuildDate>Thu, 29 Aug 2025 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://www.psu-jastreb.rs/feed.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>О нама - ПСУ Јастреб</title>
+      <link>https://www.psu-jastreb.rs/#about_us</link>
+      <description>Планинарско-спортско удружење Јастреб је организација посвећена планинарским активностима, излетима и дружењу у природи. Придружите се нашим планинарским активностима и постаните део заједнице љубитеља природе.</description>
+      <pubDate>Thu, 29 Aug 2025 12:00:00 +0100</pubDate>
+      <guid>https://www.psu-jastreb.rs/#about_us</guid>
+    </item>
+    
+    <item>
+      <title>Наша мисија и циљеви</title>
+      <link>https://www.psu-jastreb.rs/#org_misson</link>
+      <description>Наши циљеви укључују изградњу заједнице кроз активности у природи, привлачење ентузијаста, стицање нових вештина, организовање акција и камповања, као и развој радио-аматеризма.</description>
+      <pubDate>Thu, 29 Aug 2025 12:00:00 +0100</pubDate>
+      <guid>https://www.psu-jastreb.rs/#org_misson</guid>
+    </item>
+    
+    <item>
+      <title>Новости и догађаји</title>
+      <link>https://www.psu-jastreb.rs/novosti.html</link>
+      <description>Пратите најновије вести и догађаје нашег удружења. Сазнајте о планираним излетима, камповањима и другим активностима.</description>
+      <pubDate>Thu, 29 Aug 2025 12:00:00 +0100</pubDate>
+      <guid>https://www.psu-jastreb.rs/novosti.html</guid>
+    </item>
+    
+    <item>
+      <title>Групе и активности</title>
+      <link>https://www.psu-jastreb.rs/#about_work</link>
+      <description>Укључите се у наше специјалне групе: Група за Комуникацију и Логистику (КиЛ) која се бави технологијама, картографијом и радио-аматеризмом за планинарске акције.</description>
+      <pubDate>Thu, 29 Aug 2025 12:00:00 +0100</pubDate>
+      <guid>https://www.psu-jastreb.rs/#about_work</guid>
+    </item>
+    
+    <item>
+      <title>Галерија</title>
+      <link>https://www.psu-jastreb.rs/gallery.html</link>
+      <description>Погледајте нашу галерију и видите како наше удружење изгледа у акцији. Фотографије са излета, камповања и других планинарских активности.</description>
+      <pubDate>Thu, 29 Aug 2025 12:00:00 +0100</pubDate>
+      <guid>https://www.psu-jastreb.rs/gallery.html</guid>
+    </item>
+    
+    <item>
+      <title>Честа питања и одговори</title>
+      <link>https://www.psu-jastreb.rs/#QandA</link>
+      <description>Одговори на најчешћа питања о чланству, активностима, чланарини и другим аспектима рада удружења. Све што треба да знате о ПСУ Јастреб.</description>
+      <pubDate>Thu, 29 Aug 2025 12:00:00 +0100</pubDate>
+      <guid>https://www.psu-jastreb.rs/#QandA</guid>
+    </item>
+    
+    <item>
+      <title>Контакт информације</title>
+      <link>https://www.psu-jastreb.rs/#kontakt</link>
+      <description>Контактирајте са нама за више информација о чланству, активностима или било каква друга питања. Пратите нас на друштвеним мрежама.</description>
+      <pubDate>Thu, 29 Aug 2025 12:00:00 +0100</pubDate>
+      <guid>https://www.psu-jastreb.rs/#kontakt</guid>
+    </item>
+    
+    <item>
+      <title>Чланство и чланарина</title>
+      <link>https://www.psu-jastreb.rs/</link>
+      <description>Прикључите се нашем удружењу! Чланарина се плаћа у три годишња интервала (април, август, децембар) по 1500 дин, или годишње 4500 дин. Активности су отворене за чланове од 15 до 30 година.</description>
+      <pubDate>Thu, 29 Aug 2025 12:00:00 +0100</pubDate>
+      <guid>https://www.psu-jastreb.rs/membership</guid>
+    </item>
+  </channel>
+</rss>
