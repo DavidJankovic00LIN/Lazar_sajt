@@ -15,6 +15,8 @@ Allow: /povlen_8_2025.html
 Allow: /divcibare_2025.html
 Allow: /akcija_tara.html
 Allow: /db_maj_2025.html
+Allow: /strazilovo_oktobar.html
+Allow: /gucevo_septembar.html
 
 # Allow crawling of CSS and JavaScript files
 Allow: /style.css
