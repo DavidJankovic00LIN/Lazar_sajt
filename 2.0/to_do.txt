@@ -1,0 +1,5 @@
+#1 - Kreiran projekat jastreb 2.0
+
+-Uvezeni asseti
+
+-Poceto sa kreiranjem prve komponenete- navbar;
