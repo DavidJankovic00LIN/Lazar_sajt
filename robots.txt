@@ -17,6 +17,9 @@ Allow: /akcija_tara.html
 Allow: /db_maj_2025.html
 Allow: /strazilovo_oktobar.html
 Allow: /gucevo_septembar.html
+Allow: /kablar_januar_2026.html
+Allow: /db_mart_26.html
+Allow: /borski_sto_maj_2026.html
 
 # Allow crawling of CSS and JavaScript files
 Allow: /style.css

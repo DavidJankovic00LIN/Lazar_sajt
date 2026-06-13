@@ -32,9 +32,15 @@
   </url>
   <url>
     <loc>https://www.psu-jastreb.rs/gallery.html</loc>
-    <lastmod>2026-01-09</lastmod>
+    <lastmod>2026-06-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.psu-jastreb.rs/borski_sto_maj_2026.html</loc>
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://www.psu-jastreb.rs/#QandA</loc>
