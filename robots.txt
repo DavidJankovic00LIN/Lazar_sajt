@@ -1,13 +1,11 @@
 User-agent: *
 Allow: /
 
-# Allow crawling of main pages
 Allow: /index.html
 Allow: /novosti.html
 Allow: /gallery.html
 Allow: /nas_tim.html
 
-# Allow crawling of news articles
 Allow: /news/
 Allow: /prvi_maj_2025.html
 Allow: /strazilovo_2025.html
@@ -17,33 +15,22 @@ Allow: /akcija_tara.html
 Allow: /db_maj_2025.html
 Allow: /strazilovo_oktobar.html
 Allow: /gucevo_septembar.html
+Allow: /kablar_novembar.html
 Allow: /kablar_januar_2026.html
 Allow: /db_mart_26.html
 Allow: /borski_sto_maj_2026.html
+Allow: /divcibare_jul_2026.html
+Allow: /db_avgust_2026.html
 
-# Allow crawling of CSS and JavaScript files
 Allow: /style.css
 Allow: /favicon/
-
-# Allow crawling of images and photos
 Allow: /foto/
 Allow: /gallery/
-Allow: /favicon/
 
-# Disallow crawling of private/policy pages (optional - remove if you want them indexed)
 Disallow: /uslovi_koriscenja.html
 Disallow: /politika_privatnosti.html
-
-# Disallow crawling of system files
 Disallow: /.git/
 Disallow: /CNAME
 Disallow: /CNAME.txt
 
-# Sitemap location
-Sitemap: https://www.psu-jastreb.rs/sitemap.xml
-
-# RSS Feed location
-Sitemap: https://www.psu-jastreb.rs/feed.xml
-
-# Crawl delay (optional - tells crawlers to wait between requests)
-Crawl-delay: 1
+Sitemap: https://psu-jastreb.rs/sitemap.xml

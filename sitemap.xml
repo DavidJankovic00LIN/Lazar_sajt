@@ -1,57 +1,111 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.psu-jastreb.rs/</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://psu-jastreb.rs/</loc>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.psu-jastreb.rs/#about_us</loc>
-    <lastmod>2026-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.psu-jastreb.rs/#org_misson</loc>
-    <lastmod>2026-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.psu-jastreb.rs/novosti.html</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://psu-jastreb.rs/novosti.html</loc>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://www.psu-jastreb.rs/#about_work</loc>
-    <lastmod>2026-01-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.psu-jastreb.rs/gallery.html</loc>
-    <lastmod>2026-06-13</lastmod>
+    <loc>https://psu-jastreb.rs/gallery.html</loc>
+    <lastmod>2026-08-14</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.psu-jastreb.rs/borski_sto_maj_2026.html</loc>
+    <loc>https://psu-jastreb.rs/nas_tim.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/divcibare_jul_2026.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/db_avgust_2026.html</loc>
+    <lastmod>2026-08-14</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/borski_sto_maj_2026.html</loc>
     <lastmod>2026-06-13</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.psu-jastreb.rs/#QandA</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://psu-jastreb.rs/db_mart_26.html</loc>
+    <lastmod>2026-03-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://www.psu-jastreb.rs/#kontakt</loc>
-    <lastmod>2026-01-09</lastmod>
+    <loc>https://psu-jastreb.rs/kablar_januar_2026.html</loc>
+    <lastmod>2026-01-25</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/kablar_novembar.html</loc>
+    <lastmod>2025-12-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/strazilovo_oktobar.html</loc>
+    <lastmod>2025-10-05</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/gucevo_septembar.html</loc>
+    <lastmod>2025-09-28</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/povlen_8_2025.html</loc>
+    <lastmod>2025-08-17</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/akcija_tara.html</loc>
+    <lastmod>2025-08-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/db_maj_2025.html</loc>
+    <lastmod>2025-05-27</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/strazilovo_2025.html</loc>
+    <lastmod>2025-05-04</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/prvi_maj_2025.html</loc>
+    <lastmod>2025-05-02</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/divcibare_2025.html</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
