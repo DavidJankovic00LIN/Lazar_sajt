@@ -14,7 +14,7 @@
   </url>
   <url>
     <loc>https://psu-jastreb.rs/gallery.html</loc>
-    <lastmod>2026-10-06</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -27,6 +27,12 @@
   <url>
     <loc>https://psu-jastreb.rs/gucevo_sept_2026.html</loc>
     <lastmod>2026-10-06</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://psu-jastreb.rs/medvednik_oktobar_2026.html</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
   </url>

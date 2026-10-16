@@ -23,6 +23,7 @@ Allow: /divcibare_jul_2026.html
 Allow: /db_avgust_2026.html
 Allow: /bobija_sept_2026.html
 Allow: /gucevo_sept_2026.html
+Allow: /medvednik_oktobar_2026.html
 
 Allow: /style.css
 Allow: /favicon/
